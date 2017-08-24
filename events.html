@@ -1,0 +1,13 @@
+---
+layout: page
+title: Events
+permalink: /events
+---
+
+<div class="events">
+{% for event in site.data.events %}
+    {{ event.date | date: "%-d %B %Y, %H:%M" }}
+    <a href="{{ event.link }}">{{ event.description }}</a>
+    <br>
+{% endfor %}
+</div>

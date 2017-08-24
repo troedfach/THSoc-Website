@@ -67,6 +67,7 @@
         float: left;
         padding: 0 10px;
         margin: 0;
+        font-family: "";
         font-size: 16pt;
         color: $white;
 
@@ -172,6 +173,26 @@
     margin-bottom: 5px;
     margin-top: 0;
 } 
+
+
+/*-------------------
+---- Events page ----
+-------------------*/
+
+
+.events h2 {
+    font-weight: 500;
+}
+
+
+.events time, .events a{
+    display: inline;
+    margin-right: 10px;
+}
+
+.events time {
+    color: #330000;
+}
 
 /*-------------------
 ---- Page | Post ----
