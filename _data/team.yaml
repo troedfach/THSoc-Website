@@ -1,0 +1,9 @@
+- name: Daniel Biro
+  role: President
+  img: daniel.jpg
+- name: Angus Shaw
+  role: Secretary
+  img: angus.jpg
+- name: Duncan Guthrie
+  role: Treasurer
+  img: duncan.jpg

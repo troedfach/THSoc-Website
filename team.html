@@ -1,0 +1,16 @@
+---
+layout: page
+title: Our Team
+permalink: /team
+---
+
+<div class="team-members">
+    {% for member in site.data.team %}
+    <div class="team-member">
+    <img alt="{{member.name}}" src="/assets/img/teammembers/{{member.img}}">
+    <p class="member-name">{{member.name}}</p>
+    <p class="member-role">{{member.role}}</p>
+    </div>
+    <br>
+    {% endfor %}
+</div>
