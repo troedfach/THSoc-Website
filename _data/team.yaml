@@ -2,8 +2,15 @@
   role: President
   img: daniel.jpg
 - name: Angus Shaw
-  role: Secretary
+  role: Meme Manager
   img: angus.jpg
-- name: Duncan Guthrie
+- name: Gwion ap Rheinallt
   role: Treasurer
-  img: duncan.jpg
+  img: gwion.jpg
+- name: Bence Varadi
+  role: Secretary
+  img: bence.jpg
+- name: Laura Masselos
+  role: Vice President
+  img: laura.jpg
+  
