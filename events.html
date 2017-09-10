@@ -5,7 +5,7 @@ permalink: /events
 ---
 
 <div class="events">
-{% assign eventsSorted = (site.data.events | sort: 'date') | reverse %}
+{% assign eventsSorted = site.data.events | sort: 'date' | reverse %}
 {% for event in eventsSorted %}
     <time datetime="{{event.date}}">{{ event.date | date: "%-d %B %Y, %H:%M" }}</time>
     <a href="{{ event.link }}">{{ event.description }}</a>

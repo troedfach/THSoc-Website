@@ -5,7 +5,7 @@ permalink: /announcements/
 ---
 
 <ol class="announcements">
-  {% assign announcements = (site.announcements | sort: 'date' ) | reverse %}
+  {% assign announcements = site.announcements | sort: 'date' | reverse %}
   {% for a in announcements %}
     <li>
         <time datetime="{{a.date}}"> {{ a.date | date: "%-d %B %Y" }} </time> 

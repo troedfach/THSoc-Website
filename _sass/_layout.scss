@@ -64,19 +64,19 @@
     width: 80%;
     margin: auto;
     a {
+        @include roboto($white,16pt);
         float: left;
         padding: 0 10px;
         margin: 0;
-        font-family: "";
-        font-size: 16pt;
-        color: $white;
+        border-bottom: 3px solid transparent;
+        @include transition(0.5s);
 
         &:last-child {
             margin-right: none;
         }
 
         &:hover {
-            border-bottom: 3px solid red;
+            border-bottom: 3px solid $purple;
         }
     }
     
@@ -192,7 +192,7 @@
 }
 
 .events time {
-    color: #330000;
+  @include roboto-mono($dark-grey,14pt);
 }
 
 /*-------------------
@@ -208,15 +208,15 @@
     border-top: 1px solid black;
     list-style: none;
     font-size: 1.1em;
-    font-style: italic;
 }
 
 .announcements {
     time, p {
+      @include roboto($dark-grey,14pt);
         display: block;
     }
     time {
-        color: #300;
+      @include roboto-mono($purple,14pt);
     }
 }
 
@@ -231,8 +231,8 @@
 
 .team-member:hover {
     img {
-        height: 140px;
-        width: 140px;
+        height: 130px;
+        width: 130px;
     }
 }
 
@@ -246,12 +246,14 @@
 
 .member-name {
     margin: 1em 0 0;
-    font-weight: 600;
+    text-transform: uppercase;
+    @include roboto-medium($black,14pt);
 }
 
 .member-role {
     margin: 0;
-    font-style: italic;
+    @include roboto($dark-grey,12pt);
+
 }
 
 /*-------------------
@@ -282,6 +284,9 @@ main {
 .post-content {
     h2, h3, h4, h5, h6 {
         margin: 20px 0;
+    }
+    p {
+      @include roboto-font-family;
     }
 }
 
